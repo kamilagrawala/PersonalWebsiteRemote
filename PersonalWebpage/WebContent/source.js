@@ -1,6 +1,8 @@
  $(window).load(function() {
- 	$(".tabs").fadeIn("slow");
  	$(".loader").fadeOut("slow");
+ 	$(".tabs").fadeIn("slow");
+	$("#circularDiv").fadeIn("slow");
+	
  });
  
  $(window).ready(function() {
