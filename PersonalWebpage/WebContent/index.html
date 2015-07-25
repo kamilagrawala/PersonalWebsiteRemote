@@ -5,14 +5,21 @@
 <meta charset="utf-8" />
 <title>Kamil Agrawala</title>
 <link rel="stylesheet"
-	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://code.jquery.com/jquery-[latest].min.js"></script>
+<script src="jquery.flip.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css" />
 <link rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="source.js"></script>
 </head>
 <body>
+
+	<div class="loader">
+		<h1>LOADING</h1>
+		<span></span> <span></span> <span></span>
+	</div>
 
 	<div style="display: none;" class="tabs">
 		<ul>
@@ -30,15 +37,24 @@
 			<p>Contact Info.</p>
 		</div>
 
-		<div id="circularDiv" style="display: none;">
-			<img class="passImg" src="passportsize.jpg">
+		<div id="circularDiv" class="card">
+			<div class="front">
+				<img class="passImg" src="passportsize.jpg">
+			</div>
+			<div class="back">
+				<a href="http://google.com">link</a> <p>I am graduating senior at Oregon State University,
+				with a dual degree in Computer and Electrical Engineering.</p>
+				<p>As my resume suggests I have engineering work experience, both in the United States and abroad.
+					 Which perfectly equips me to handle many different tasks and kinds of people.</p>
+				    
+				 <p>As far as technical skills are concerned, I have worked on a wide variety of different projects.
+				  From Android app development (Java) to Unix bash scripting and server-client models (in C, using threads or sockets and even processes aka “forking”).
+				   I also have experience in working remotely via SSH and am highly comfortable with the Unix terminal (man pages are everything!). I have made automated regression test suites  (using BASH) and ‘make’ files using C. I have also done substantial work with MySQL & SQL, creating multiple relational databases and then creating ETL scripts to automate the processing of BigData.
+ 				</p>
+			</div>
 		</div>
 
-	</div>
 
-	<div class="loader">
-		<h1>LOADING</h1>
-		<span></span> <span></span> <span></span>
 	</div>
 
 </body>
